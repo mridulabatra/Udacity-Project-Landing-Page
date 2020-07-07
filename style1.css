@@ -1,0 +1,177 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+}
+#left{
+	width: 30%;
+	height: 100%;
+	background: #566156;
+	position: relative;
+	top:100%;
+	z-index: -1;
+	transition: .5s;
+}
+#middle{
+	width: 40%;
+	height: 100%;
+	background: #494a49;
+	transform-origin: left; 
+	transform: rotateY(90deg);
+	transition: .5s;
+	z-index: -1;
+}
+#right{
+	width: 30%;
+	height: 100%;
+	background: #acdf4d;
+	position: relative;
+    bottom: 100%;
+    transition: .5s;
+    z-index: -1;	
+}
+#nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	opacity: 0;
+	transition: .0s;
+}
+#logo{
+	width: 30px;
+	height: 100%;
+	padding-left:10%;
+}
+#logo h1{
+	line-height: 80px;
+	color: #acdf4d;
+}
+#logo h1::first-letter{
+	text-transform: uppercase;
+	font-size: 45px;
+}
+
+ul{
+	list-style-type: none;
+}
+#menu1{
+	width: 40%;
+	height: 100%;
+
+}
+#menu1 ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 20%;
+}
+#menu1 ul li{
+	line-height: 80px;
+	text-transform: uppercase;
+	color: #fff;
+}
+#menu2{
+	width: 30%;
+	height: 100%;
+}
+#menu2 ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 44%;
+}
+#menu2 ul li{
+	line-height: 80px;
+	color: #fff;
+}
+#heading{
+	position: absolute;
+	top: 20%;
+	left: 15%;
+}
+#heading h1{
+	font-size: 50px;
+	letter-spacing: 4px;
+	word-spacing: 6px;
+	color: #fff;
+	position: relative;
+	line-height: 70px;
+}
+#heading h1 span{
+	color: #acdf4d;
+}
+#he1{
+	left: 60px;
+	transition: .5s;
+}
+#he2{
+	left: 0px;
+	transition: .5s;
+}
+#text{
+	position: absolute;
+	width: 30%;
+	height: auto;
+	padding: 30px;
+	background: #fff;
+	bottom: 13%;
+	opacity: 0;
+	transition: 5s;
+}
+#text p{
+	text-align: center;
+}
+#text button{
+	width: 150px;
+	height: 30px;
+	border: 0;
+	background: #acdf4d;
+	position: relative;
+	top: 80px;
+	left: 60px;
+}
+#img{
+	position: absolute;
+	width: 450px;
+	height: auto;
+	top: 17%;
+	left: 50%;
+	opacity: 0;
+	transition: .3s;
+}
+#img img{
+	width: 100%;
+	height: auto;
+}
+#social{
+	position: absolute;
+	top: 46%;
+	right: 0;
+	width: 50px;
+	height: 150px;
+}
+#social ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#social ul li{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+}
